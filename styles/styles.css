@@ -22,8 +22,8 @@
 }
 
 .light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-primary: #f9f1f0;
+  --color-secondary: #f8afa6;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -175,7 +175,7 @@ section {
   height: 90%;
   width: 68%;
   margin-left: 4rem;
-  background-color: var(--color-black);
+  background-color: var(--color-primary);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -183,7 +183,7 @@ section {
   height: 100%;
   object-fit: cover;
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
@@ -208,7 +208,7 @@ section {
 /*About*/
 .about-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
@@ -459,6 +459,20 @@ section {
   color: var(--color-grey-2);
 }
 
+.timeline .timeline-item ul {
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.timeline .timeline-item ul li {
+  margin: 0.5rem 0;
+  list-style-type: disc;
+}
+
+.timeline .timeline-item ul ul {
+  margin-left: 1rem;
+}
+
 .port-text {
   padding: 2rem 0;
   text-align: center;
@@ -603,7 +617,7 @@ section {
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  filter: grayscale(100%);
+  /*ilter: grayscale(100%);*/
   transition: all 0.4s ease-in-out;
 }
 .blogs .blog .blog-text {
